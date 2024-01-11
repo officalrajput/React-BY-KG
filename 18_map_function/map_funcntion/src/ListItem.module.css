@@ -1,0 +1,17 @@
+.RR-div{
+  background-color: skyblue;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  list-style: none;
+  
+}
+.RR-bg{
+  color: red;
+}
+button{
+  background-color: red;
+  border-radius: 5px;
+  float: right;
+  color: rgb(187, 235, 15);
+}
