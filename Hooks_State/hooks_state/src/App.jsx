@@ -35,12 +35,20 @@ let Clear=()=>{
 
 }
 
+let removeElem =(id)=>{
+  let newArray=myArr.filter((event)=>{
+     return event.id !== id;
+  })
+
+  setMyArr(newArray);
+}
+
 
 
   return <>
 {/* { arr.map((event) =>(<h1 key={event}>Vinod age:{(event)}</h1>))} */}
   
-{myArr.map((event)=>(<h1 key={event.id}>{event.name} {event.age}</h1>))}
+{myArr.map((event)=>(<h1 key={event.id}>{event.name} {event.age} <button onClick={() => removeElem(event.id)}>remove</button></h1>))}
 <button onClick={Clear}>Clear</button>
 
   {/* <h1>{myName}</h1>
