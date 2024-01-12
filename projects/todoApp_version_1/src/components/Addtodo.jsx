@@ -1,3 +1,4 @@
+import { MdAddBox } from "react-icons/md";
 function Addtodo()
 {
   return <>
@@ -10,7 +11,7 @@ function Addtodo()
       <input type="date" />
     </div>
     <div class="col-2">
-    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-success"><MdAddBox /></button>
     </div>
    </div>
    </div>
